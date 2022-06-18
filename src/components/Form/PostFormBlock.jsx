@@ -1,3 +1,5 @@
+// у импортов есть своя расстановка приоритетов
+// не путай кавычки
 import React from 'react';
 import PostFormAdd from "./PostFormAdd";
 import PostFilterBlock from "./PostFilterBlock";

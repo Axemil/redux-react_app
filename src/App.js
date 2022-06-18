@@ -1,3 +1,4 @@
+// что по неиспользуемым импортам
 import React, {useEffect} from "react";
 import {useSelector} from "react-redux";
 import PostFormBlock from "./components/Form/PostFormBlock";
@@ -6,6 +7,7 @@ import ErrorNotification from "./components/UI/error/ErrorNotification";
 
 
 function App() {
+    // что по неиспользуемым константам
     const posts = useSelector(state => state.posts.value)
     return (
         <div className="App">

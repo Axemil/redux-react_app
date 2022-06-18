@@ -1,4 +1,5 @@
 import React from 'react';
+// используй деструктуризацию с classes
 import classes from "./Button.module.scss"
 
 const Button = ({children, error, ...props}) => {

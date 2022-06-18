@@ -4,6 +4,7 @@ export const useFetch = (callback) => {
         try{
             await callback()
         } catch (e) {
+            // обработать эту ошибку снэкбаром
             console.log(e)
         }
     }

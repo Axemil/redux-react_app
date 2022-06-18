@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import Posts from "./Posts";
+// никогда не оставляй неиспользуемые импорты
 import {useSelector} from "react-redux";
 
 

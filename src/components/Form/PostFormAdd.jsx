@@ -1,3 +1,5 @@
+// у импортов есть своя расстановка приоритетов
+// не путай кавычки
 import React, {useState} from 'react';
 import Input from "../UI/Input/Input";
 import Button from "../UI/button/Button";
@@ -11,6 +13,7 @@ const PostFormAdd = () => {
         title: "",
         body: ""
     })
+    // submitPost выглядит как специальный хук, в директорию хуков его
     const submitPost = () => {
         if(newPost.title.length && newPost.body.length){
             dispatch(addPost([{
@@ -32,6 +35,7 @@ const PostFormAdd = () => {
             }))
         }
     }
+    // разделить логику и отображение, если считаешь, что submitPost не хук и стоит тут оставить
     return (
         <div className="post_form__block">
             <Input onChange={event => setNewPost({...newPost, title: event.target.value})}

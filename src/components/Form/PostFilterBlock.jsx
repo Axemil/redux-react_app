@@ -1,3 +1,5 @@
+// у импортов есть своя расстановка приоритетов
+// не путай кавычки
 import React from 'react';
 import Select from "../UI/select/Select";
 import Input from "../UI/Input/Input";
@@ -8,6 +10,7 @@ import {setSearch} from "../../redux/reducers/searchSlice";
 const PostFilterBlock = () => {
     const dispatch = useDispatch()
     const search = useSelector(state => state.search.value)
+    // такие вещи закидывают в константы, у тебя должна быть специальная директория для такого
     const options = [
         {
             value: 'title',
