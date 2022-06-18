@@ -1,0 +1,73 @@
+.PostForm{
+  width: 100%;
+  min-height: 50px;
+  padding: 30px;
+  background: #f55951;
+  border-radius: 16px;
+  h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    user-select: none;
+  }
+}
+
+.PostBlock{
+  width: 100%;
+  min-height: 100px;
+  padding: 15px 10px;
+  position: relative;
+  .listPost_empty{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: #f55951;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 15px;
+    user-select: none;
+    border-radius: 16px;
+    text-transform: uppercase;
+  }
+  .postItem{
+    background: #f55951;
+    border-radius: 16px;
+    color: #fff;
+    padding: 10px;
+    margin: 0 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:last-child{
+      margin: 0;
+    }
+  }
+}
+
+.PostFilter{
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  input{
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
+  transform: translateY(-30px);
+}

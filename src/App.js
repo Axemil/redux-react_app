@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from "react";
+import {useSelector} from "react-redux";
+import PostFormBlock from "./components/Form/PostFormBlock";
+import PostBlock from "./components/Posts/PostBlock";
+import ErrorNotification from "./components/UI/error/ErrorNotification";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const posts = useSelector(state => state.posts.value)
+    return (
+        <div className="App">
+            <ErrorNotification />
+            <PostFormBlock title={"Todo-list App"} />
+            <PostBlock />
+        </div>
+    );
 }
 
 export default App;

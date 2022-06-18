@@ -1,0 +1,26 @@
+.error{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff6868;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.error-enter {
+  opacity: 0;
+}
+.error-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.error-exit {
+  opacity: 1;
+}
+.error-exit-active {
+  opacity: 0;
+  transition: 500ms ease-in;
+  transform: translateY(-30px);
+}
